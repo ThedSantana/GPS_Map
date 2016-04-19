@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+
+    <ImageButton
+        android:id="@+id/btnmapanormal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Satélite"
+        android:src="@drawable/satelite"
+        android:contentDescription="Ver mapa satélite"
+        />
+
+    <ImageButton
+        android:id="@+id/btnhibrido"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Híbrido"
+        android:src="@drawable/hibrido"
+        android:contentDescription="Ver mapa híbrido"
+
+        />
+
+    <ImageButton
+        android:id="@+id/btnterreno"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Terreno"
+        android:src="@drawable/terreno"
+        android:contentDescription="Ver mapa terreno"
+
+        />
+
+    <ImageButton
+        android:id="@+id/btnzoom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Zoom"
+        android:src="@drawable/zoom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAlignment="center"
+
+        android:textSize="14dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorPrimary"
+        android:text="POSICIONAMIENTO POR GPS"
+        android:id="@+id/textobotones"
+        android:gravity="center_vertical" />
+
+
+
+
+</LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+
+        />
+
+
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.antonioejemplo.gps_3.MapsActivity" />
+
+
+
+</LinearLayout>
